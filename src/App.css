@@ -47,7 +47,7 @@
 
 #page-content-wrapper {
   overflow: auto;
-  height: calc(100% - 4em);
+  height: calc(100% - 6em);
   background: no-repeat bottom right;
   background-size: cover;
   background-position: right;
