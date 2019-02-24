@@ -1,33 +1,131 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #e61e19;
+  --secondary: #ffebcc;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+#menu-toggle>img {
+  width: 1em;
+}
+
 .App {
+  position: fixed;
+  height: calc(100%);
+  width: calc(100%);
+  top: 0;
+  left: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e61e19+0,f5b553+100 */
+  background: rgb(230, 30, 25);
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(230, 30, 25, 1) 0%, rgba(245, 181, 83, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(230, 30, 25, 1) 0%, rgba(245, 181, 83, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(230, 30, 25, 1) 0%, rgba(245, 181, 83, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e61e19', endColorstr='#f5b553', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+#page-content-wrapper {
+  overflow: auto;
+  height: calc(100% - 4em);
+  background: no-repeat bottom right;
+  background-size: cover;
+  background-position-x: 0;
+  background-position-y: 0;
+}
+
+body {
+  color: #FFF
+}
+
+.bg-light {
+  background-color: #ffebcc !important;
+  color: black;
+}
+
+.bigger-text {
+  font-size: 150%;
+}
+
+#avatar {
+  border-radius: 50%;
+  background: #fff;
+  width: 5em;
+  height: 5em;
+  margin: 2em auto 1em auto;
+  background-image: url('./img/corvo.jpg');
+  background-size: 100%;
+}
+
+.list-group-item.list-group-item-action.bg-light {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  display: block;
+  padding: 1.5em 3em;
+  background-color: rgba(255, 255, 255, .35) !important;
+  color: #000;
+  border: 0;
+}
+
+.btn.btn-primary.btn-lg {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: .75em 3em;
   text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 2em 0;
+  float: left;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.transparent-box {
+  padding: 1em;
+  background-color: #B16D03AA;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.transparent-box svg {
+  margin: 1em;
+  height: 4em;
 }
 
-.App-link {
-  color: #61dafb;
+.transparent-box img {
+  margin: 1em;
+  height: 4em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+    margin-top: 1em;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 575.98px) {
+  .display-1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.0;
   }
 }
