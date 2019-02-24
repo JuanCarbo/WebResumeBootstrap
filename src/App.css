@@ -62,10 +62,6 @@ body {
   color: black;
 }
 
-.bigger-text {
-  font-size: 150%;
-}
-
 #avatar {
   border-radius: 50%;
   background: #fff;
@@ -117,17 +113,21 @@ body {
   padding: 0;
 }
 
-
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 3em;
     margin-top: 1em;
   }
-  .contactIcon{
+  .contactIcon {
+    display: inline;
+    height: auto;
+    width: auto;
+  }
+  .contactText {
     display: inline;
   }
-  .contactText{
-    display: inline;
+  .bigger-text {
+    font-size: 150%;
   }
 }
 
@@ -140,7 +140,7 @@ body {
   h3 {
     font-size: 1rem;
   }
-  .container-fluid.w-50.float-left.p-5.bigger-text{
+  .container-fluid.w-50.float-left.p-5.bigger-text {
     width: 100% !important;
   }
 }
