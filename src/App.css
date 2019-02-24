@@ -50,8 +50,7 @@
   height: calc(100% - 4em);
   background: no-repeat bottom right;
   background-size: cover;
-  background-position-x: 0;
-  background-position-y: 0;
+  background-position: right;
 }
 
 body {
@@ -96,7 +95,7 @@ body {
   text-align: center;
   font-weight: bold;
   border-radius: 4px;
-  margin: 2em 0;
+  margin: 0.4em 0;
   float: left;
 }
 
@@ -110,22 +109,38 @@ body {
   height: 4em;
 }
 
-.transparent-box img {
-  margin: 1em;
-  height: 4em;
+.contactIcon {
+  display: block;
+  height: 1em;
+  width: 1em;
+  margin: 0.4em;
+  padding: 0;
 }
+
 
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 3em;
     margin-top: 1em;
   }
+  .contactIcon{
+    display: inline;
+  }
+  .contactText{
+    display: inline;
+  }
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 768px) {
   .display-1 {
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.0;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .container-fluid.w-50.float-left.p-5.bigger-text{
+    width: 100% !important;
   }
 }
